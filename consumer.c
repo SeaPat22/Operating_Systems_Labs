@@ -77,7 +77,7 @@ int main() {
 	//////////////////////////
 
 	// Saying the Consumer has been cleaned up and will no longer consume.
-	printf("\nThe Consumer has been cleaned up.\n");
+	printf("The Consumer has been cleaned up.\n");
 	return 0;
 	///////////////////////////////////////////////
 }

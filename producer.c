@@ -79,7 +79,7 @@ int main() {
 	//////////////////////////
 
 	// Saying the Producer has been cleaned up and will no longer produce.
-	printf("\nThe Producer has been cleaned up.\n");
+	printf("The Producer has been cleaned up.\n");
 	return 0;
 	///////////////////////////////////////////////
 }
