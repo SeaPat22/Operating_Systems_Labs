@@ -29,7 +29,7 @@ int main() {
 	// Initializing the semaphores that will produce items onto the table.
 	sem_t* full = sem_open("full", O_CREAT, 0666, 0);
 	sem_t* open = sem_open("open", O_CREAT, 0666, 2);
-    sem_t* mutex = sem_open("mutex", O_CREAT, 0666, 1);
+        sem_t* mutex = sem_open("mutex", O_CREAT, 0666, 1);
 	////////////////////////////////////////////////////
 
 	// Setting up the program to run five times.
@@ -48,9 +48,9 @@ int main() {
 		////////////////////////
 
 		// Putting an item onto the table.
-        sem_wait(mutex); 
+                sem_wait(mutex); 
 		++(*tbl);
-        sem_post(mutex);
+                sem_post(mutex);
 		/////////////////
 
 		// Saying that an item has been produced to the table and signals the Consumer to consume.
@@ -63,13 +63,13 @@ int main() {
 	// Closes the semaphores.
 	sem_close(full);
 	sem_close(open);
-    sem_close(mutex);
+        sem_close(mutex);
 	//////////////////
 
 	// Unlinks the semaphores.
 	sem_unlink("full");
 	sem_unlink("open");
-    sem_unlink("mutex");
+        sem_unlink("mutex");
 	/////////////////////
 
 	// Closes and unlinks the shared memory between the Producer and Consumer.
