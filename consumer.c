@@ -76,8 +76,8 @@ int main() {
 	shm_unlink("tbl");
 	//////////////////////////
 
-	// Saying the Consumer has been cleaned up and will no longer consume.
-	printf("The Consumer has been cleaned up.\n");
+	// Saying the Consumer has been stopped and will no longer consume.
+	printf("The Consumer has been stopped.\n");
 	return 0;
 	///////////////////////////////////////////////
 }

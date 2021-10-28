@@ -78,8 +78,8 @@ int main() {
 	shm_unlink("tbl");
 	//////////////////////////
 
-	// Saying the Producer has been cleaned up and will no longer produce.
-	printf("The Producer has been cleaned up.\n");
+	// Saying the Producer has been stopped and will no longer produce.
+	printf("The Producer has stopped.\n");
 	return 0;
 	///////////////////////////////////////////////
 }
