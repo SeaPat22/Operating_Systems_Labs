@@ -77,7 +77,7 @@ int main() {
 	//////////////////////////
 
 	// Saying the Consumer has been stopped and will no longer consume.
-	printf("The Consumer has been stopped.\n");
+	printf("The Consumer has stopped.\n");
 	return 0;
 	///////////////////////////////////////////////
 }
